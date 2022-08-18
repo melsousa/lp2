@@ -1,7 +1,7 @@
-import abc
+from abc import ABC, abstractmethod
 
-class Enviar(abc.ABC):
+class Enviar(ABC):
     
-    @abc.abstractmethod
+    @abstractmethod
     def execute(self, Usuario):
         pass
