@@ -1,0 +1,2 @@
+class AnswerText(Answer):
+    
