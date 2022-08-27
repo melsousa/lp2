@@ -1,6 +1,9 @@
 from Answer import Answer
+from hashSet import HashSet
 
 class Question:
+    tags = HashSet()
+
     def __init__(self, text, tags, level):
         self.text = text
         self.tags = tags
@@ -17,4 +20,11 @@ class Question:
     
     def Answer(self):
         return Answer
-    
+
+    def level(self):
+        
+        def level(self, score): #####
+            self.score = score
+        
+        def score(self):
+            return score
