@@ -1,4 +1,4 @@
-from typing import Type
+
 from Answer import Answer
 class AnswerText(Answer):
     

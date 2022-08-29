@@ -1,8 +1,8 @@
+from enum import Enum
 from Answer import Answer
-from hashSet import HashSet
 
-class Question:
-    tags = HashSet()
+class Question(Enum):
+    tags = set()
 
     def __init__(self, text, tags, level):
         self.text = text
@@ -13,7 +13,7 @@ class Question:
         return self.text
     
     def tags(self):
-        return self.tags
+        return tuple(self.tags)
     
     def level(self):
         return self.level
@@ -21,10 +21,17 @@ class Question:
     def Answer(self):
         return Answer
 
+     # erro
     def level(self):
+        easy = 25
+        medium = 50
+        hard = 75
+        very_hard = 100
         
-        def level(self, score): #####
-            self.score = score
+        def score(self, easy, medium, hard, very_hard):
+            return score()
+        # def level(self, score): #####
+        #     self.score = score
         
-        def score(self):
-            return score
+        # def score(self):
+        #     return score

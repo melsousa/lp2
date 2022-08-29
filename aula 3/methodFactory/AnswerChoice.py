@@ -1,9 +1,7 @@
-from hashSet import HashSet
-from collections import defaultdict
 from Answer import Answer
 
 class AnswerChoice(Answer):
-    options = HashSet()
+    options = set()
 
     def __init__(self, options):
         self.options = options
@@ -13,6 +11,6 @@ class AnswerChoice(Answer):
     
     # get
     def options(self):
-        return defaultdict.update
+        return tuple(self.options)
 
     
