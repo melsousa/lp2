@@ -1,7 +1,8 @@
-
+from enum import Enum
 from Answer import Answer
+
 class AnswerText(Answer):
     
-    def type_answer(self):
-        return Answer.type_answer.TEXT
+    def Option(self):
+        return Answer.Options.TEXT
         
