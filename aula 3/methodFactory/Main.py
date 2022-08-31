@@ -18,7 +18,6 @@ question1 = QuestionFactory.createAnswerChoice(
         ('ndj', 'vjks')
         
 )
-print(f'{question.tags}')
-print(f'{question.answer}')
-
+print(question.text)
+print(question.tags)
 print(question1.level)

@@ -1,4 +1,5 @@
 from enum import Enum
+from typing import Set
 from Answer import Answer
 
 class Question:
@@ -16,9 +17,9 @@ class Question:
         def score(self):
             return self.score
     
-    tags = set()
+    tags = set([])
 
-    def __init__(self, text, tags, level: Level, answer: Answer):
+    def __init__(self, text, tags:Set, level: Level, answer: Answer):
         self.text = text
         self.tags = tags
         self.level = level

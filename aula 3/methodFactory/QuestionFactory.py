@@ -11,5 +11,5 @@ class QuestionFactory:
         return Question(text, tags, level, AnswerText())
 
     
-    def createAnswerChoice( text:String, tags:Set, level:Question.Level, options:List):
+    def createAnswerChoice( text:String, tags:Set, level:Question.Level, options:Set):
         return Question(text, tags, level, AnswerChoice(options))

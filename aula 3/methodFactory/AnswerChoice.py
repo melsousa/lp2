@@ -1,9 +1,12 @@
 from enum import Enum
+from typing import Set
 from Answer import Answer
 
 class AnswerChoice(Answer):
    
-    def __init__(self, options):
+    options = set()
+   
+    def __init__(self, options:Set):
         self.options = options
 
     def Option(self):
