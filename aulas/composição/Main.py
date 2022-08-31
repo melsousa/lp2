@@ -20,3 +20,5 @@ d2.attach(v3)
 
 d1.data = 10
 d2.data = 15
+
+d1.detach(v1)

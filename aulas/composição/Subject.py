@@ -21,5 +21,6 @@ class Subject:
 
         try:
             self._observers.remove(observer)
+            print('observer deleted')
         except ValueError as e:
             print(e)
