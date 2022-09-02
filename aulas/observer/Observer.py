@@ -1,7 +1,7 @@
 from Subject import Subject
 
 
-class Data(Subject):
+class Observer(Subject):
 
     def __init__(self, name=''):
         Subject.__init__(self)  # Construtor
@@ -12,7 +12,7 @@ class Data(Subject):
     def data(self):
         return self._data
 
-    @data.setter  # adicionar novas funções a função
+    @data.setter  # adicionar novas funções ao metódo data
     def data(self, value):
         self._data = value
         self.notify()

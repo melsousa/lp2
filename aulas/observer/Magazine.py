@@ -1,6 +1,5 @@
-
-class OctalViewer():
+class Magazine:
 
     def update(self, subject):
-        print('OctalViewer: Subject' + str(subject.name) +
+        print('Magazine: Subject' + str(subject.name) +
               'has data '+str(oct(subject.data)))

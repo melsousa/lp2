@@ -10,16 +10,17 @@ class Subject:
             if modifier != observer:
                 observer.update(self)
 
-    # Se o observador não estiver na lista, anexá-lo à lista
-    def attach(self, observer):
+    # Anexar o observador na lista
+    def register(self, observer):
 
         if observer not in self._observers:
             self._observers.append(observer)
 
     # Remove os observadores da lista
-    def detach(self, observer):
+    def unregister(self, observer):
 
         try:
+            
             self._observers.remove(observer)
             print('observer deleted')
         except ValueError as e:
