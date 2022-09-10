@@ -25,3 +25,5 @@ class Subject:
             print('observer deleted')
         except ValueError as e:
             print(e)
+
+    
