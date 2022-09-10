@@ -17,7 +17,7 @@ ob2.register(v3)
 ob1.data = 10
 ob2.data = 15
 
-# ob1.notify()
+ob1.notify()
 
 
 
